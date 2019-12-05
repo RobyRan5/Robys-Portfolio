@@ -9,33 +9,25 @@ body {
 }
 
 .container {
-    text-align: right;
     color: #727171;
     word-spacing: 1px;
-    letter-spacing: 5px;
-    margin: 20px;  
+    letter-spacing: 5px;  
+    width: 960px;
+    border: 1 solid black;
+    margin: 0 auto;
+    display: block;
 }
 
 h1 {
     color: #efeee7;
     background-color: #4aaaa5;
-    font-size: 30px;
+    font-size: 28px;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     margin: 0;
-    text-align: left;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 0px;
     width: 275px;
-    margin-left: 60px; 
-    text-align: center;
-}
-
-#qwerty {
-    width: 960px;
-    border: 1 solid black;
-    margin: 0 auto;
-    display: block;
 }
 
 img {
@@ -51,7 +43,7 @@ img {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 29px;
     color: #4aaaa5;
 }
 
@@ -79,8 +71,16 @@ p {
     height: 75px;
 }
 
-#page2 .contact {
-    border: 10px;
-    width: 10px;
-    height: 10px;
+.name {
+        float: left;
+    }
+
+#bio-links {
+    float: right;
 }
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
